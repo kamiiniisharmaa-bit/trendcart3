@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Trendcart – Privacy Policy</title>
+    <!-- Google Fonts & simple reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafc;
+            color: #1e1e2a;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar (consistent with homepage & terms) */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #efeff1;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 16px 0;
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #1f2937, #2b4f6e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #4b6b8f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2c3e4e;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2b6e9e;
+        }
+
+        .cart-icon {
+            position: relative;
+            font-size: 1.4rem;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -12px;
+            background: #e53e3e;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 2px 6px;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        /* privacy hero */
+        .privacy-hero {
+            background: linear-gradient(115deg, #f0f4f9 0%, #ffffff 100%);
+            padding: 56px 0 40px;
+            border-bottom: 1px solid #e9edf2;
+        }
+
+        .privacy-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #1e2a3a, #2c5a7a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .privacy-sub {
+            color: #4a627a;
+            font-size: 1rem;
+            max-width: 700px;
+        }
+
+        /* main content card */
+        .privacy-content {
+            background: white;
+            border-radius: 28px;
+            padding: 48px 44px;
+            margin: 48px auto 64px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eef2f8;
+        }
+
+        .privacy-section {
+            margin-bottom: 38px;
+        }
+
+        .privacy-section h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #1f3b4c;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .privacy-section h2 i {
+            color: #2b6e9e;
+            font-size: 1.6rem;
+        }
+
+        .privacy-section p, .privacy-section li {
+            color: #2d3e50;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .privacy-section ul {
+            margin: 12px 0 20px 32px;
+        }
+
+        .privacy-section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #f8fafd;
+            padding: 22px 28px;
+            border-radius: 20px;
+            margin: 24px 0 10px;
+            border-left: 4px solid #2b6e9e;
+        }
+
+        .data-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 12px;
+            margin: 18px 0;
+        }
+
+        .data-badge {
+            background: #eef2fa;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #1f4e6e;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: 0.2s;
+        }
+
+        .back-link:hover {
+            background: #0f3c57;
+            transform: translateY(-2px);
+        }
+
+        /* footer */
+        footer {
+            background: #11181c;
+            color: #cddfe7;
+            padding: 48px 0 32px;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #b0c7d4;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #2a3c46;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 760px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .privacy-content {
+                padding: 28px 20px;
+            }
+            .privacy-title {
+                font-size: 2rem;
+            }
+            .privacy-section h2 {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (consistent) -->
+<div class="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="#" id="homeLink" style="text-decoration: none;">
+                <h1>TRENDCART <span>✦ style forward</span></h1>
+            </a>
+        </div>
+        <div class="nav-links">
+           <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCountBadge" class="cart-badge">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Privacy Hero -->
+<div class="privacy-hero">
+    <div class="container">
+        <div class="privacy-title">Privacy Policy</div>
+        <div class="privacy-sub">Last updated: June 15, 2026 · Your trust is our priority at Trendcart</div>
+        <a href="#" id="backToShopBtn" class="back-link"><i class="fas fa-arrow-left"></i> Continue shopping</a>
+    </div>
+</div>
+
+<!-- Privacy main content -->
+<div class="container">
+    <div class="privacy-content">
+        <div class="privacy-section">
+            <h2><i class="fas fa-shield-heart"></i> 1. Our Commitment to Privacy</h2>
+            <p>At Trendcart ("we", "us", "our"), we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (trendcart.example), make a purchase, or interact with our services. By using Trendcart, you agree to the terms of this policy.</p>
+            <p>We follow industry best practices to ensure that your information remains confidential and secure. We will never sell your personal information to third parties.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-database"></i> 2. Information We Collect</h2>
+            <p>We may collect the following categories of information:</p>
+            <div class="data-list">
+                <span class="data-badge"><i class="fas fa-user"></i> Name & contact details</span>
+                <span class="data-badge"><i class="fas fa-envelope"></i> Email address</span>
+                <span class="data-badge"><i class="fas fa-map-marker-alt"></i> Billing/shipping address</span>
+                <span class="data-badge"><i class="fas fa-credit-card"></i> Payment info (encrypted)</span>
+                <span class="data-badge"><i class="fas fa-mobile-alt"></i> Device & browsing data</span>
+                <span class="data-badge"><i class="fas fa-history"></i> Order history</span>
+            </div>
+            <p>When you place an order, we collect transaction details. If you create an account, we store your preferences and order history. Additionally, we automatically collect technical data such as IP address, browser type, and interactions with our site through cookies and similar technologies.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-chart-line"></i> 3. How We Use Your Information</h2>
+            <p>Trendcart uses your personal data for the following purposes:</p>
+            <ul>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e; width:18px;"></i> Process and fulfill your orders, including shipping and payment.</li>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e;"></i> Communicate with you about order updates, delivery status, and customer support.</li>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e;"></i> Personalize your shopping experience and recommend products tailored to you.</li>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e;"></i> Improve our website, services, and marketing campaigns using analytics.</li>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e;"></i> Detect and prevent fraud, security incidents, or other prohibited activities.</li>
+                <li><i class="fas fa-check-circle" style="color:#2b6e9e;"></i> Send promotional emails, newsletters, or special offers (you may opt out anytime).</li>
+            </ul>
+            <div class="highlight-box">
+                <i class="fas fa-envelope-open-text" style="margin-right: 10px;"></i> <strong>Marketing preferences:</strong> You can unsubscribe from marketing emails by clicking the "unsubscribe" link in any email or by contacting support@trendcart.com.
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-share-alt"></i> 4. Sharing & Disclosure</h2>
+            <p>We never sell your personal data. However, we may share information with trusted third parties to operate our business:</p>
+            <ul>
+                <li><strong>Service providers:</strong> Payment processors (Stripe, PayPal), shipping carriers (FedEx, USPS), and IT/cloud hosting providers.</li>
+                <li><strong>Legal compliance:</strong> If required by law or in response to valid legal requests (e.g., subpoenas, court orders).</li>
+                <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of assets, your data may be transferred with notice.</li>
+            </ul>
+            <p>All third parties are contractually obligated to protect your data and use it only for the services they provide to Trendcart.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-cookie-bite"></i> 5. Cookies & Tracking Technologies</h2>
+            <p>We use cookies, web beacons, and similar technologies to enhance your browsing experience. Cookies are small text files stored on your device. They help us remember your cart contents, login status, and preferences. You can control cookies through your browser settings, but disabling them may affect site functionality.</p>
+            <p><strong>Types of cookies we use:</strong> Essential cookies (required for site operations), preference cookies, analytics cookies (Google Analytics), and marketing cookies (to show relevant ads).</p>
+            <p>You can learn more about managing cookies in your browser's help section. By continuing to use Trendcart, you consent to our use of cookies as described.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-user-shield"></i> 6. Data Retention & Security</h2>
+            <p>We retain your personal data only as long as necessary to fulfill the purposes outlined in this policy, including legal, accounting, or reporting requirements. For example, order data is kept for 7 years for tax compliance. You may request deletion of your account data at any time.</p>
+            <p>We implement industry-standard security measures, including SSL encryption, firewalls, and access controls, to protect your information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+            <div class="highlight-box">
+                <i class="fas fa-lock"></i> <strong>Your responsibility:</strong> Keep your account password confidential. If you suspect unauthorized access, please notify us immediately.
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-euro-sign"></i> 7. Your Privacy Rights (GDPR & CCPA)</h2>
+            <p>Depending on your location, you may have specific rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Request a copy of the data we hold about you.</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete information.</li>
+                <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion of your data, subject to legal obligations.</li>
+                <li><strong>Right to Restrict Processing:</strong> Limit how we use your data.</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+                <li><strong>Right to Opt-out of Sale:</strong> Trendcart does not sell personal data.</li>
+            </ul>
+            <p>To exercise your rights, please contact our Data Protection Officer at <strong>privacy@trendcart.com</strong>. We will respond within 30 days. No fee is charged for reasonable requests.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-child"></i> 8. Children's Privacy</h2>
+            <p>Trendcart does not knowingly collect personal information from individuals under the age of 16. If you are a parent or guardian and believe your child has provided us with personal data, please contact us, and we will take steps to delete such information.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-globe-americas"></i> 9. International Data Transfers</h2>
+            <p>Our servers and operations are based in the United States. If you access Trendcart from outside the US, please be aware that your information may be transferred to, stored, and processed in the US where privacy laws may differ. By using our services, you consent to this transfer.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-bell"></i> 10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The "Last updated" date at the top indicates the latest revision. We encourage you to review this page periodically. In case of material changes, we will notify you via email or a prominent notice on our website.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2><i class="fas fa-headset"></i> 11. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please reach out:</p>
+            <p><i class="fas fa-envelope"></i> <strong>privacy@trendcart.com</strong><br>
+            <i class="fas fa-phone-alt"></i> +1 (800) 555‑TREND (8736)<br>
+            <i class="fas fa-building"></i> Trendcart Privacy Office, 450 Fashion Avenue, Suite 201, New York, NY 10001, USA</p>
+            <p>Our dedicated team will assist you with any privacy-related inquiries.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>TRENDCART</h4>
+                <p>Your daily style destination</p>
+                <p><i class="fas fa-map-marker-alt"></i> NYC · London · Tokyo</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping info</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#" id="termsFooterLink">Terms of Service</a>
+                <a href="#" id="privacyFooterLink">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Trendcart — Style with confidence, protected with privacy.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // --- Cart consistency (shared with homepage and terms) ---
+    let cart = [];
+
+    function updateCartBadge() {
+        const badge = document.getElementById('cartCountBadge');
+        if (!badge) return;
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        badge.innerText = totalItems;
+        localStorage.setItem('trendcart_cart', JSON.stringify(cart));
+    }
+
+    function loadCartFromStorage() {
+        const stored = localStorage.getItem('trendcart_cart');
+        if (stored) {
+            try {
+                let parsed = JSON.parse(stored);
+                if (Array.isArray(parsed)) cart = parsed;
+                else cart = [];
+                updateCartBadge();
+            } catch(e) { cart = []; }
+        }
+    }
+
+    // Navigation helpers (redirect to homepage, terms page)
+    function goToHomepage() {
+        window.location.href = "./";
+    }
+
+    function goToTermsPage() {
+        window.location.href = "./terms.html";
+    }
+
+    // Set up home links
+    const homeLink = document.getElementById('homeLink');
+    const homeNav = document.getElementById('homeNav');
+    const backToShopBtn = document.getElementById('backToShopBtn');
+
+    if (homeLink) homeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToHomepage();
+    });
+    if (homeNav) homeNav.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToHomepage();
+    });
+    if (backToShopBtn) backToShopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToHomepage();
+    });
+
+    // Terms page link
+    const termsFooterLink = document.getElementById('termsFooterLink');
+    if (termsFooterLink) {
+        termsFooterLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = "./terms.html";
+        });
+    }
+    // Stay on privacy page for privacy footer link (just scroll)
+    const privacyFooterLink = document.getElementById('privacyFooterLink');
+    if (privacyFooterLink) {
+        privacyFooterLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Cart icon interaction
+    const cartIconDiv = document.querySelector('.cart-icon');
+    if (cartIconDiv) {
+        cartIconDiv.style.cursor = 'pointer';
+        cartIconDiv.addEventListener('click', () => {
+            alert(`🛍️ Your Trendcart bag has ${cart.reduce((s,i)=>s+i.quantity,0)} item(s).\nGo to homepage to checkout.`);
+        });
+    }
+
+    // Listen to storage sync (in case cart updated from other pages)
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'trendcart_cart') {
+            loadCartFromStorage();
+        }
+    });
+
+    // Initialize cart badge
+    loadCartFromStorage();
+
+    // add any other nav links that point to homepage
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.innerText.trim() === "Home") {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                goToHomepage();
+            });
+        }
+    });
+</script>
+</body>
+</html>

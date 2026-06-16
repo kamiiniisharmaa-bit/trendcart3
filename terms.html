@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Trendcart – Terms of Service</title>
+    <!-- Google Fonts & simple reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafc;
+            color: #1e1e2a;
+            line-height: 1.5;
+        }
+
+        /* container utility */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* header / navbar (consistent with homepage) */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #efeff1;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 16px 0;
+        }
+
+        .logo h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #1f2937, #2b4f6e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #4b6b8f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2c3e4e;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2b6e9e;
+        }
+
+        .cart-icon {
+            position: relative;
+            font-size: 1.4rem;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -12px;
+            background: #e53e3e;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 2px 6px;
+            min-width: 18px;
+            text-align: center;
+        }
+
+        /* terms hero section */
+        .terms-hero {
+            background: linear-gradient(115deg, #f0f4f9 0%, #ffffff 100%);
+            padding: 56px 0 40px;
+            border-bottom: 1px solid #e9edf2;
+        }
+
+        .terms-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #1e2a3a, #2c5a7a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .terms-sub {
+            color: #4a627a;
+            font-size: 1rem;
+            max-width: 700px;
+        }
+
+        /* main content */
+        .terms-content {
+            background: white;
+            border-radius: 28px;
+            padding: 48px 44px;
+            margin: 48px auto 64px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eef2f8;
+        }
+
+        .terms-section {
+            margin-bottom: 38px;
+        }
+
+        .terms-section h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #1f3b4c;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .terms-section h2 i {
+            color: #2b6e9e;
+            font-size: 1.6rem;
+        }
+
+        .terms-section p, .terms-section li {
+            color: #2d3e50;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .terms-section ul {
+            margin: 12px 0 20px 32px;
+        }
+
+        .terms-section li {
+            margin-bottom: 8px;
+        }
+
+        .legal-note {
+            background: #f8fafd;
+            padding: 22px 28px;
+            border-radius: 20px;
+            margin-top: 28px;
+            border-left: 4px solid #2b6e9e;
+            font-size: 0.9rem;
+        }
+
+        /* footer */
+        footer {
+            background: #11181c;
+            color: #cddfe7;
+            padding: 48px 0 32px;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #b0c7d4;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #2a3c46;
+            font-size: 0.85rem;
+        }
+
+        /* back to shop button */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #1f4e6e;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: 0.2s;
+        }
+
+        .back-link:hover {
+            background: #0f3c57;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 760px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .terms-content {
+                padding: 28px 20px;
+            }
+            .terms-title {
+                font-size: 2rem;
+            }
+            .terms-section h2 {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (consistent with homepage) -->
+<div class="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="#" style="text-decoration: none;" id="homeLink">
+                <h1>TRENDCART <span>✦ style forward</span></h1>
+            </a>
+        </div>
+        <div class="nav-links">
+           <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCountBadge" class="cart-badge">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Terms hero section -->
+<div class="terms-hero">
+    <div class="container">
+        <div class="terms-title">Terms of Service</div>
+        <div class="terms-sub">Last updated: June 15, 2026 · Your agreement with Trendcart</div>
+        <a href="#" id="backToShopBtn" class="back-link"><i class="fas fa-arrow-left"></i> Back to shopping</a>
+    </div>
+</div>
+
+<!-- Main terms content -->
+<div class="container">
+    <div class="terms-content">
+        <div class="terms-section">
+            <h2><i class="fas fa-file-contract"></i> 1. Overview & Acceptance</h2>
+            <p>Welcome to Trendcart ("Company", "we", "our", "us"). By accessing or using our website (trendcart.example) and any related services, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Trendcart platform. These Terms apply to all visitors, users, and customers who shop or interact with our brand.</p>
+            <p>Trendcart reserves the right to update, modify, or replace any part of these Terms at any time. It is your responsibility to check this page periodically for changes. Your continued use of the site following the posting of any changes constitutes acceptance of those changes.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-shopping-bag"></i> 2. Products & Pricing</h2>
+            <p>We strive to display accurate product descriptions, images, and pricing. However, we do not warrant that product descriptions, colors, or other content is error-free. In the event of a pricing error, we reserve the right to cancel or refuse any orders placed at the incorrect price. All prices are listed in USD and do not include applicable taxes or shipping fees unless stated otherwise.</p>
+            <p>Trendcart offers a curated selection of fashion, accessories, and lifestyle goods. Availability of products is subject to change without notice, and we reserve the right to limit quantities of any item.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-credit-card"></i> 3. Orders & Payment</h2>
+            <p>When you place an order with Trendcart, you agree to provide current, complete, and accurate purchase and account information. We accept major credit cards, digital wallets, and other secure payment methods as displayed at checkout. After placing an order, you will receive an email confirmation; however, we reserve the right to cancel any order due to suspected fraud, unauthorized transactions, or stock unavailability.</p>
+            <p>Once an order is confirmed, you will receive shipping updates. Trendcart does not guarantee specific delivery dates but works with reliable carriers to ensure timely delivery.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-truck"></i> 4. Shipping & Returns</h2>
+            <p>We offer standard and express shipping options. Shipping costs and estimated delivery windows are provided at checkout. Risk of loss passes to the buyer upon delivery to the carrier. Return requests are accepted within 30 days of receipt for unworn, unwashed items with original tags attached. Final sale items cannot be returned. To initiate a return, contact our support team at <strong>support@trendcart.com</strong>. Refunds will be issued to the original payment method within 7-10 business days after inspection.</p>
+            <p>For damaged or defective items, please contact us immediately with photos, and we will arrange a replacement or full refund at no extra cost.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-user-lock"></i> 5. Account & User Conduct</h2>
+            <p>You may be required to create an account to access certain features. You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account. You agree to provide accurate information and not to impersonate any other person. Prohibited activities include: using the site for any illegal purpose, interfering with security features, scraping or harvesting data, or uploading malicious code.</p>
+            <p>We reserve the right to suspend or terminate accounts that violate these Terms or engage in fraudulent behavior.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-copyright"></i> 6. Intellectual Property</h2>
+            <p>All content on the Trendcart website—including text, graphics, logos, product images, and software—is the property of Trendcart or its content suppliers and is protected by international copyright and trademark laws. You may not reproduce, distribute, or create derivative works without explicit written permission. "Trendcart" and the associated logo are registered trademarks.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-shield-alt"></i> 7. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Trendcart shall not be liable for any indirect, incidental, or consequential damages arising from your use of the site or purchase of products. Our total liability for any claim relating to your purchase shall not exceed the total amount you paid for the product in question. We do not guarantee that the website will be uninterrupted, error-free, or free of viruses.</p>
+            <div class="legal-note">
+                <i class="fas fa-gavel"></i> <strong>Governing Law:</strong> These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to conflict of law principles. Any disputes arising from these Terms or your use of Trendcart shall be resolved exclusively in the state or federal courts located in New York County.
+            </div>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-envelope"></i> 8. Contact Information</h2>
+            <p>If you have any questions about these Terms, please contact us at:</p>
+            <p><i class="fas fa-envelope-open-text"></i> legal@trendcart.com<br>
+            <i class="fas fa-phone-alt"></i> +1 (800) 555‑TREND<br>
+            <i class="fas fa-map-pin"></i> 450 Fashion Avenue, Suite 201, New York, NY 10001</p>
+        </div>
+
+        <div class="terms-section">
+            <h2><i class="fas fa-history"></i> 9. Changes & Updates</h2>
+            <p>Trendcart reserves the right to amend these Terms at any time. The "Last updated" date at the top of this page indicates the latest revision. We encourage you to review these Terms regularly to stay informed. Your continued use of the website after changes are posted constitutes your acceptance of the revised Terms.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>TRENDCART</h4>
+                <p>Your daily style destination</p>
+                <p><i class="fas fa-map-marker-alt"></i> NYC · London · Tokyo</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping info</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#" id="termsFooterLink">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Trendcart — Every purchase, a new story.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // --- Maintain cart consistency (same as homepage) ---
+    let cart = [];
+
+    function updateCartBadge() {
+        const badge = document.getElementById('cartCountBadge');
+        if (!badge) return;
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        badge.innerText = totalItems;
+        localStorage.setItem('trendcart_cart', JSON.stringify(cart));
+    }
+
+    function loadCartFromStorage() {
+        const stored = localStorage.getItem('trendcart_cart');
+        if (stored) {
+            try {
+                let parsed = JSON.parse(stored);
+                if (Array.isArray(parsed)) cart = parsed;
+                else cart = [];
+                updateCartBadge();
+            } catch(e) { cart = []; }
+        }
+    }
+
+    // simple helper to redirect to home page (index.html or current origin's homepage)
+    // Since the homepage is separate file, we can either open same-origin homepage.
+    // For smooth demo, we define goToHome function that reloads to a simulated home.
+    // But we will create a functional link that opens "index.html" if exists or just show alert with instruction.
+    // To keep everything working in a single-page demo, we inform user: but we provide actual link to home.html?
+    // In this context, we provide both a manual redirect to the homepage (assuming the homepage is served at same path)
+    // We'll make the home buttons point to the original homepage file: since we built two separate pages, user can open.
+    // For better user experience: we give a helpful message and redirect to root "/".
+    
+    function goToHomepage() {
+        // If the original homepage exists at same directory, we can redirect to "./"
+        window.location.href = "./";   // try to go to index (homepage)
+        // fallback message if not working within stackblitz / local
+        setTimeout(() => {
+            // just safety
+        }, 100);
+    }
+    
+    // setup navigation back to homepage
+    const homeLink = document.getElementById('homeLink');
+    const homeNav = document.getElementById('homeNav');
+    const backToShopBtn = document.getElementById('backToShopBtn');
+    
+    if (homeLink) homeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "./";
+    });
+    if (homeNav) homeNav.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "./";
+    });
+    if (backToShopBtn) backToShopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "./";
+    });
+    const termsFooterLink = document.getElementById('termsFooterLink');
+    if (termsFooterLink) termsFooterLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "./terms.html"; // stay on same but already there, prevents confusion
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // any other nav links that might point to home
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.innerText.trim() === "Home") {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = "./";
+            });
+        }
+    });
+
+    // ensure cart badge shows existing cart data (from homepage)
+    loadCartFromStorage();
+
+    // additional: Add a small interactive tooltip for cart (optional)
+    const cartIconDiv = document.querySelector('.cart-icon');
+    if (cartIconDiv) {
+        cartIconDiv.style.cursor = 'pointer';
+        cartIconDiv.addEventListener('click', () => {
+            alert(`🛒 Your Trendcart bag contains ${cart.reduce((s,i)=>s+i.quantity,0)} item(s).\nProceed to checkout on the homepage.`);
+        });
+    }
+    // update badge in real-time in case localStorage changes (listener)
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'trendcart_cart') {
+            loadCartFromStorage();
+        }
+    });
+</script>
+</body>
+</html>
